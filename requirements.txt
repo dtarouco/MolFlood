@@ -1,0 +1,18 @@
+# MolFlood v0.9.0 Public Beta
+# Current stable runtime pins selected on 2026-08-24.
+# Recommended Python: 3.12-3.14.
+
+numpy==2.5.2
+pandas==3.0.5
+scipy==1.18.0
+matplotlib==3.11.1
+seaborn==0.13.2
+scikit-learn==1.9.0
+rdkit==2026.3.5
+xgboost==3.4.1
+lightgbm==4.7.0
+catboost==1.2.10
+optuna==4.9.0
+joblib==1.5.3
+shap==0.52.0
+tabulate==0.10.0
