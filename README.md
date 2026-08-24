@@ -17,8 +17,8 @@ The long-term goal is to support both a reusable prediction pipeline and a commu
 ## Workflow overview
 
 <p align="center">
-  <img src="assets/molflood_minipipeline.png"
-       width="650"
+  <img src="assets/molflood_pipeline_hq.png"
+       width="850"
        alt="MolFlood machine-learning workflow">
 </p>
 
