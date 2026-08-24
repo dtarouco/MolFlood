@@ -49,7 +49,7 @@ The workflow includes:
 - Y-scrambling;
 - Morgan/Tanimoto applicability domain;
 - Morgan-bit interpretation;
-- SHAP interpretation;
+- XAI techniques;
 - dataset/model SHA-256 hashes;
 - environment and dependency metadata;
 - Model Card generation;
