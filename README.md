@@ -14,6 +14,14 @@ MolFlood is an open, reproducible machine-learning workflow for predicting molec
 
 The long-term goal is to support both a reusable prediction pipeline and a community-driven collection of validated, target-specific MolFlood models.
 
+## Workflow overview
+
+<p align="center">
+  <img src="assets/molflood_minipipeline.png"
+       width="850"
+       alt="MolFlood machine-learning workflow">
+</p>
+
 ## Scientific scope
 
 MolFlood predicts **docking scores generated under a documented computational docking context**.
