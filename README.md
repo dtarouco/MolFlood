@@ -22,6 +22,29 @@ The long-term goal is to provide support both for a reusable prediction pipeline
        alt="MolFlood machine-learning workflow">
 </p>
 
+## What is a docking score?
+
+Molecular docking computationally evaluates possible binding poses of a small molecule (ligand) within a binding site of a molecular target. A **docking score** is the numerical value produced by the scoring function of the docking software to rank or evaluate these predicted poses.
+
+In many commonly used docking protocols, more favorable docking scores are represented by lower (more negative) values. However, the numerical meaning, scale, and direction of the score depend on the docking software, scoring function, and protocol used.
+
+A docking score should **not** be interpreted as an experimentally measured binding affinity. It is a computational score generated under a particular docking protocol and is primarily useful for comparing and prioritizing
+molecules evaluated under compatible conditions.
+
+MolFlood learns the relationship between molecular structure and docking scores previously generated for a specific target and docking protocol. It can then rapidly estimate docking scores for new molecules within that same modeling context.
+
+## Why MolFlood?
+
+Large-scale molecular docking campaigns can require substantial computational resources, particularly when very large molecular libraries need to be evaluated. This can represent an important limitation for research groups with restricted access to high-performance computing infrastructure.
+
+MolFlood was designed to enable **very rapid ML-assisted screening of molecular libraries using previously trained and validated MolFlood models**. Once a target-specific model has been trained, new molecules can be prioritized at a fraction of the computational cost normally associated with performing a new docking calculation for every compound.
+
+The goal is not to replace molecular docking or experimental validation. Instead, MolFlood is intended as a **molecular prioritization tool**: machine learning can rapidly screen large collections of molecules and help researchers identify subsets that deserve subsequent computational or experimental investigation.
+
+This approach is particularly relevant to the broader mission of MolFlood: supporting research on **neglected and understudied diseases**, including research environments where access to extensive computational infrastructure may be limited.
+
+As the MolFlood community grows, validated target-specific models may be shared through the project repository, allowing researchers to perform rapid local predictions without having to reproduce the original model-training process. Each model should remain associated with its target, docking protocol, validation results, applicability domain, and provenance metadata.
+
 ## Scientific scope
 
 MolFlood predicts **docking scores generated under a documented computational docking context**.
