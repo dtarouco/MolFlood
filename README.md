@@ -10,9 +10,9 @@
 
 **Developed by:** Davidt Tarouco, Dr. Conrado Pedebos, and Dr. Rodrigo Ligabue-Braun
 
-MolFlood is an open, reproducible machine-learning workflow for predicting molecular docking scores from molecular structure, with particular emphasis on therapeutic targets associated with **neglected and understudied diseases**.
+MolFlood is an open, reproducible machine-learning workflow designed for the prediction of molecular docking scores from extremely large molecule libraries at an outstanding speed, based on the molecular structure. Its emphasis is on therapeutic targets associated with **neglected and understudied diseases**.
 
-The long-term goal is to support both a reusable prediction pipeline and a community-driven collection of validated, target-specific MolFlood models.
+The long-term goal is to provide support both for a reusable prediction pipeline and for a community-driven collection of validated, target-specific MolFlood models.
 
 ## Workflow overview
 
