@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/molflood_logo.png" width="280" alt="MolFlood logo">
-</p>
-
 # MolFlood
 
 Machine Learning docking score prediction for neglected and understudied disease targets.
@@ -16,7 +12,7 @@ The long-term goal is to provide support both for a reusable prediction pipeline
 
 <p align="center">
   <img src="assets/molflood_pipeline_hq.png"
-       width="850"
+       width="950"
        alt="MolFlood machine-learning workflow">
 </p>
 
