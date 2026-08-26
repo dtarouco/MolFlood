@@ -5,10 +5,9 @@
 # MolFlood
 
 **Docking Score Prediction Pipeline**
-
-**Version:** 0.9.0 — Public Beta
-
 **Developed by:** Davidt Tarouco, Dr. Conrado Pedebos, and Dr. Rodrigo Ligabue-Braun
+
+# Description
 
 MolFlood is an open, reproducible machine-learning workflow designed for the prediction of molecular docking scores from extremely large molecule libraries at an outstanding speed, based on the molecular structure. Its emphasis is on therapeutic targets associated with **neglected and understudied diseases**.
 
@@ -55,7 +54,7 @@ MolFlood models are target- and protocol-specific and should not be assumed to t
 
 ## Current release
 
-MolFlood v0.9.0 is a **Public Beta**.
+MolFlood v1.0.0
 
 The workflow includes:
 
@@ -99,26 +98,6 @@ Install dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
-```
-
-## Repository structure
-
-```text
-MolFlood/
-├── README.md
-├── LICENSE
-├── CITATION.cff
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── SECURITY.md
-├── requirements.txt
-├── notebooks/
-├── tutorial/
-├── assets/
-├── docs/
-├── community_models/
-└── .github/
 ```
 
 ## Training input
