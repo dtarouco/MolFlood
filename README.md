@@ -4,7 +4,7 @@
 
 # MolFlood
 
-**Docking Score Prediction Pipeline**
+Machine Learning docking score prediction for neglected and understudied disease targets.
 
 # Description
 
