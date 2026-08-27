@@ -2,6 +2,8 @@
 
 Machine Learning docking score prediction for neglected and understudied disease targets.
 
+[![DOI](https://zenodo.org/badge/1345384712.svg)](https://doi.org/10.5281/zenodo.22133991)
+
 # Description
 
 MolFlood is an open, reproducible machine-learning workflow designed for the prediction of molecular docking scores from extremely large molecule libraries at an outstanding speed, based on the molecular structure. Its emphasis is on therapeutic targets associated with **neglected and understudied diseases**.
