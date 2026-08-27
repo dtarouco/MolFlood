@@ -180,6 +180,12 @@ See [LICENSE](LICENSE).
 
 MolFlood v1.0.0 is the **first stable public release** of the pipeline. This version has been validated through complete workflow execution and is intended to provide a reproducible, local-first framework for machine-learning-assisted docking score prediction and molecular prioritization.
 
-# Do you want to cite this work?
+## Citation
 
-**Developed by:** Davidt Tarouco, Dr. Conrado Pedebos, and Dr. Rodrigo Ligabue-Braun. (add Zenodo DOI)
+If you use MolFlood in scientific work, please cite the specific software version used.
+
+### MolFlood v1.0.0
+
+Tarouco, D., Pedebos, C. and Ligabue-Braun, R. (2026). *MolFlood: Docking Score Prediction Pipeline*. Zenodo. DOI: 10.5281/zenodo.22133992.
+
+Citation metadata are also provided in `CITATION.cff`.
