@@ -11,119 +11,29 @@ It is intended to provide users with a reproducibility reference for the officia
 - **Execution mode:** Local Jupyter / JupyterLab
 - **Full pipeline execution:** Passed
 
-## Environment
-
-- **Operating system:**
-- **Python version:**
-- **Environment type:** local
-- **Dependencies installed from:** `requirements.txt`
-- **Restart Kernel → Run All:** 
-- **Unhandled exceptions:** 
-
 ## Tutorial dataset
 
-- **Dataset name:**
-- **Dataset source/provenance:**
-- **Number of input molecules:**
-- **Number of valid molecules used by MolFlood:**
-- **Dataset SHA-256:**
-- **Target:**
-- **Disease / biological context:**
-- **Docking software:**
-- **Docking software version:**
-- **Docking protocol identifier:**
+- **Dataset name:** `tutorial_dataset.csv`
+- **Number of input molecules:** 100k
+- **Number of valid molecules used by MolFlood:** 100k
+- **Target:** Nipah Virus RNA polymerase L
+- **Disease / biological context:** Nipah Virus
+- **Docking software:** Unidock
+- **Docking software version:** 1.2.0
 - **Docking score name:** `docking_score`
-- **Docking score units:**
-- **Docking score direction:**
 
 ## Molecular representation
 
 - **Primary structural representation:** Morgan fingerprints
 - **Additional representation:** RDKit physicochemical descriptors
-- **Morgan radius:**
-- **Morgan fingerprint size:**
+- **Morgan radius:** 2
+- **Morgan fingerprint size:** 2048
 
 ## Train / test validation
 
-- **Split mode:**
-- **Training molecules:**
-- **Held-out test molecules:**
-- **Test fraction:**
-- **Random seed:**
-- **Structural grouping method:**
-- **Cross-validation method:**
-- **Number of CV folds:**
+- **Split mode:** Random Stratified
+- **Training molecules:** 80k
+- **Held-out test molecules:** 20k
+- - **Number of Optuna trials:** 75
 
 The held-out test set must remain independent of algorithm selection and Optuna hyperparameter optimization.
-
-## Selected model
-
-- **Selected algorithm:**
-- **Selection criterion:**
-- **Best Optuna parameters:**
-- **Number of Optuna trials:**
-- **Model SHA-256:**
-
-## Held-out test performance
-
-The values in this section must refer to the complete held-out test set.
-
-| Metric | Value |
-|---|---:|
-| RMSE | |
-| MAE | |
-| R² | |
-| Spearman | |
-
-The primary held-out metrics should not exclude molecules classified as outside the applicability domain.
-
-## Applicability domain
-
-- **Method:** Morgan fingerprint Tanimoto similarity
-- **Reference chemical space:** training set
-- **Threshold calibration:** training-derived
-- **AD threshold:**
-- **Held-out test molecules classified IN:**
-- **Held-out test molecules classified OUT:**
-- **Held-out test AD coverage:**
-
-Applicability-domain classification is an annotation of structural support relative to the training chemical space. It does **not** automatically remove molecules from the held-out test set or from external prediction outputs.
-
-### Optional held-out AD diagnostic
-
-| Group | N | MAE | RMSE |
-|---|---:|---:|---:|
-| Overall held-out test | | | |
-| AD IN | | | |
-| AD OUT | | | |
-
-If reported, these subgroup results are secondary diagnostics. The complete held-out test metrics remain the primary performance results.
-
-## Additional validation
-
-- **Bootstrap analysis completed:**
-- **Y-scrambling completed:**
-- **Ranking diagnostics completed:**
-- **Morgan-bit interpretation completed:**
-- **SHAP interpretation completed:**
-
-## External molecular prediction check
-
-- **External prediction workflow executed:**
-- **Number of input molecules:**
-- **Number of successfully predicted molecules:**
-- **Applicability-domain annotation generated:**
-
-External redocking or comparison against newly generated docking scores is **not required** for the MolFlood v1.0.0 core workflow.
-
-## Generated reproducibility artifacts
-
-- **Model artifact generated:**
-- **Model Card generated:**
-- **Dataset hash generated:**
-- **Model hash generated:**
-- **Environment metadata generated:**
-
-## Reference-run conclusion
-
-The reference run should be considered complete when the notebook executes from top to bottom in the documented local environment, produces the expected held-out evaluation and reproducibility artifacts, and completes external molecular prediction without requiring external redocking.
