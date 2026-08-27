@@ -1,9 +1,12 @@
 cff-version: 1.2.0
 message: "If you use MolFlood in scientific work, please cite this software and the specific version used."
+
 title: "MolFlood: Docking Score Prediction Pipeline"
 type: software
 version: "1.0.0"
+doi: "10.5281/zenodo.22133992"
 license: MIT
+
 authors:
   - family-names: "Tarouco"
     given-names: "Davidt"
@@ -11,6 +14,7 @@ authors:
     given-names: "Conrado"
   - family-names: "Ligabue-Braun"
     given-names: "Rodrigo"
+
 keywords:
   - molecular docking
   - docking score
@@ -19,6 +23,7 @@ keywords:
   - neglected diseases
   - understudied diseases
   - cheminformatics
+
 abstract: >-
   MolFlood is a reproducible machine-learning workflow for predicting docking
   scores from molecular structure, with emphasis on therapeutic targets
