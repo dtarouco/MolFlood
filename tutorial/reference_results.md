@@ -34,6 +34,6 @@ It is intended to provide users with a reproducibility reference for the officia
 - **Split mode:** Random Stratified
 - **Training molecules:** 80k
 - **Held-out test molecules:** 20k
-- - **Number of Optuna trials:** 75
+- **Number of Optuna trials:** 75
 
 The held-out test set must remain independent of algorithm selection and Optuna hyperparameter optimization.
