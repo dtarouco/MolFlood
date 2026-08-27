@@ -83,18 +83,23 @@ Future versions of MolFlood may incorporate and systematically evaluate addition
 
 ## Installation
 
-Recommended Python:
+MolFlood is designed primarily as a **local-first workflow**. Training, validation, model interpretation, applicability-domain analysis, and molecular-library prediction can all be performed on the user's own computer, providing direct control over datasets, trained models, prediction results, and the computational environment.
+
+Running MolFlood locally is particularly recommended when **training and validating new models**, as it provides greater control over the software environment, file persistence, computational resources, and reproducibility of long-running analyses such as hyperparameter optimization, cross-validation, bootstrap evaluation, and Y-scrambling.
+
+### Local and cloud execution
+
+MolFlood can also be executed in compatible **cloud-based Jupyter environments**. However, cloud execution is **not the recommended approach for training and validating new MolFlood models**, particularly when using free or temporary cloud sessions. Session time limits, disconnections, changing environments, resource restrictions, and non-persistent storage may interrupt computationally intensive analyses or make exact environment reproduction more difficult.
+
+Cloud environments may still be convenient for **exploring the notebook, running the tutorial, or performing predictions with an already trained MolFlood model**, provided that the required dependencies and model files are available.
+
+For the development and validation of new target-specific models, a dedicated local Python environment is therefore recommended.
+
+### Recommended Python
 
 ```text
 Python 3.12-3.14
 ```
-
-Install dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
 ## Training input
 
 Minimum schema:
