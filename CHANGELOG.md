@@ -46,11 +46,6 @@ MolFlood v1.0.0 is the first stable public release of the pipeline, following su
 - Local execution is recommended for training and validating new target-specific models.
 - Cloud execution remains possible, particularly for tutorials, workflow exploration, and prediction using previously trained models.
 
-### Removed
-
-- External redocking/reference-score evaluation from the main MolFlood workflow.
-- Mandatory comparison between predicted docking scores and independently redocked molecules.
-
 ### Scientific scope
 
 MolFlood predicts docking scores generated within a defined docking context. Predictions are intended for rapid molecular prioritization and should not be interpreted as experimental binding affinities, biological activities, or evidence of therapeutic efficacy.
