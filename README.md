@@ -2,8 +2,6 @@
 
 Machine Learning docking score prediction for neglected and understudied disease targets.
 
-[![DOI](https://zenodo.org/badge/1345384712.svg)](https://doi.org/10.5281/zenodo.22133991)
-
 # Description
 
 MolFlood is an open, reproducible machine-learning workflow designed for the prediction of molecular docking scores from extremely large molecule libraries at an outstanding speed, based on the molecular structure. Its emphasis is on therapeutic targets associated with **neglected and understudied diseases**.
@@ -124,23 +122,6 @@ The training dataset is expected to have been deduplicated before entering MolFl
 6. Run the notebook from top to bottom.
 7. Inspect validation, applicability domain, and interpretation outputs.
 8. Use the saved model for external prediction.
-9. If independent redocking/reference scores become available, evaluate them in the notebook.
-
-## Tutorial dataset
-
-A developer-provided tutorial dataset is planned for the public release workflow so users can verify their environment and learn the outputs before applying MolFlood to their own docking campaigns.
-
-## Applicability domain
-
-External predictions include Morgan/Tanimoto-based applicability-domain information such as:
-
-```text
-docking_score_predicted
-max_tanimoto_to_training
-within_applicability_domain
-```
-
-Outside-domain predictions represent stronger chemical extrapolation and should be interpreted with additional caution.
 
 ## Community vision
 
@@ -150,38 +131,6 @@ Researchers will be encouraged to train and validate target-specific MolFlood mo
 
 The formal MolFlood Community Model Standard will be defined separately.
 
-## Security
-
-MolFlood currently serializes trained Python models with Joblib.
-
-**Do not load an unreviewed `.joblib` artifact from an untrusted source in a trusted environment.**
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Citation
-
-Citation metadata are provided in `CITATION.cff`.
-
-Users should cite the **specific MolFlood version** used in a scientific analysis. A DOI can be added after an archived Zenodo release is created.
-
-## License
-
-MolFlood source code is released under the **MIT License**.
-
-See [LICENSE](LICENSE).
-
-## Authors
-
-- Davidt Tarouco
-- Dr. Conrado Pedebos
-- Dr. Rodrigo Ligabue-Braun
-
-## Release status
-
-MolFlood v1.0.0 is the **first stable public release** of the pipeline. This version has been validated through complete workflow execution and is intended to provide a reproducible, local-first framework for machine-learning-assisted docking score prediction and molecular prioritization.
-
 ## Citation
 
 If you use MolFlood in scientific work, please cite the specific software version used.
@@ -190,4 +139,4 @@ If you use MolFlood in scientific work, please cite the specific software versio
 
 Tarouco, D., Pedebos, C. and Ligabue-Braun, R. (2026). *MolFlood: Docking Score Prediction Pipeline*. Zenodo. DOI: 10.5281/zenodo.22133992.
 
-Citation metadata are also provided in `CITATION.cff`.
+[![DOI](https://zenodo.org/badge/1345384712.svg)](https://doi.org/10.5281/zenodo.22133991)
